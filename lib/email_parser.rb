@@ -8,11 +8,11 @@ class EmailParser
   # @@email_hash
   def initialize(emails)
     @emails = emails
-    @@email_list << emails
+    # @@email_list << emails
   end
 
   def self.parse
-   @@email_list.split(/[\s,]+/)
+   @emails.split(/[\s,]+/)
   end
 
  end
